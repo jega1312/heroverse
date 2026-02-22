@@ -1,0 +1,37 @@
+.pagination .page-link {
+  border: 1px solid #fff;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.pagination .page-link:hover {
+  background-color: #6f42c1 !important;
+  color: #fff;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #6f42c1 !important;
+  color: #fff;
+  font-weight: 600;
+}
+
+
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link {
+  background-color: #000;
+  color: #fff;
+}
+
+
+/* Hover */
+.pagination .page-item:first-child .page-link:hover,
+.pagination .page-item:last-child .page-link:hover {
+  background-color: #6c757d !important;
+  color: #fff;
+}
+
+/* Active (while clicking only) */
+.pagination .page-item:first-child .page-link:active,
+.pagination .page-item:last-child .page-link:active {
+  background-color: #6c757d !important;
+  color: #fff;
+}

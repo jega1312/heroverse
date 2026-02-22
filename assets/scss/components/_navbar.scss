@@ -1,0 +1,116 @@
+@use "../abstracts/variables" as var;
+
+.bg-heroverse-primary {
+  background-color: var.$heroverse-primary !important;
+}
+
+.dropdown-menu {
+  display: none;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+
+  background-color: var.$heroverse-primary !important;
+  --bs-dropdown-border-color: #000 !important;
+
+  @media (max-width: 1023px) {
+    // overrides for smaller screens
+    --bs-dropdown-border-color: unset !important;
+  }
+}
+
+.dropdown-menu.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  &:hover,
+  &:focus {
+    background-color: var.$heroverse-primary !important;
+  }
+
+  &.active,
+  &:active {
+    background-color: var.$heroverse-primary !important;
+  }
+}
+
+.navbar-toggler {
+  border: none !important;
+  --bs-navbar-toggler-padding-y: 0.25rem;
+  --bs-navbar-toggler-padding-x: 0.5rem;
+
+  &:focus,
+  &:active,
+  &:focus-visible {
+    border-color: none !important;
+    box-shadow: 0 0 0 0.2rem rgb(255, 255, 255) !important;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-linecap='round' stroke-width='2' d='M6 6L24 24M6 24L24 6'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler-icon span {
+  background-color: #fff !important;
+}
+
+.link-active {
+  color: var.$dropdown-accent !important;
+}
+
+// Animation (Hamburger menu)
+@media (max-width: 991.98px) {
+  /* Slow down Bootstrap's height animation instead of killing it */
+  #navbarNavDropdown.collapsing {
+    transition: height 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+
+  /* Fade + slide on top of the height animation */
+  #navbarNavDropdown {
+    opacity: 0;
+    transform: translateY(-16px);
+    transition:
+      opacity 1.4s ease,
+      transform 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  #navbarNavDropdown.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Nav & dropdown link hover transitions
+.nav-link,
+.dropdown-item {
+  transition: color 0.3s ease;
+
+  &:hover,
+  &.active,
+  &.link-active {
+    color: var.$dropdown-accent !important;
+  }
+}
+
+// Universe-specific overrides
+.dropdown-item {
+  &[href*="marvel"]:hover,
+  &[href*="marvel"].active {
+    color: #dc3545 !important;
+  }
+
+  &[href*="dc"]:hover,
+  &[href*="dc"].active {
+    color: #0d6efd !important;
+  }
+}

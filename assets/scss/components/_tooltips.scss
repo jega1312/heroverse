@@ -1,0 +1,23 @@
+.tooltip {
+  --bs-tooltip-bg: #2f0d68;
+  --bs-tooltip-color: #fff;
+}
+
+.tooltip.show .tooltip-inner {
+  background-color: #2f0d68 !important;
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: #2f0d68 !important;
+}
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: #2f0d68 !important;
+}
+.tooltip.bs-tooltip-start .tooltip-arrow::before {
+  border-left-color: #2f0d68 !important;
+}
+.tooltip.bs-tooltip-end .tooltip-arrow::before {
+  border-right-color: #2f0d68 !important;
+}

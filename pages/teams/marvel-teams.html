@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Marvel Teams Card Gallery | Hero★Verse</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="../../assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Animate.css Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="spinner-wrapper">
+      <div
+        class="position-relative d-flex justify-content-center align-items-center"
+      >
+        <div class="spinner-border text-white" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <i class="fa-solid fa-star spinner-star"></i>
+      </div>
+    </div>
+    <div class="position-relative">
+      <header>
+        <!-- Navbar Section Starts -->
+        <nav
+          class="navbar navbar-expand-lg bg-heroverse-primary py-4 px-3 px-lg-5"
+          id="mainNavbar"
+        >
+          <div class="container-fluid">
+            <!-- Brand Logo Starts -->
+            <a
+              class="navbar-brand fw-bolder fs-2 font-primary text-white"
+              href="../../index.html"
+              >Hero★Verse</a
+            >
+            <!-- Brand Logo Starts -->
+            <!-- Hamburger Menu Toggle Starts -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Hamburger Menu Toggle Starts -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <!-- Navigation Menu Starts -->
+              <ul
+                class="navbar-nav fs-5 ms-auto text-center align-items-lg-center"
+              >
+                <!-- Home Link -->
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white font-secondary"
+                    aria-current="page"
+                    href="../../index.html"
+                    >Home</a
+                  >
+                </li>
+                <!-- Universes Dropdown Link -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white font-secondary"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Universes
+                  </a>
+                  <ul
+                    class="dropdown-menu fs-5 font-secondary text-center text-lg-start"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item text-white"
+                        href="../universes/marvel.html"
+                        >Marvel</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-white"
+                        href="../universes/dc.html"
+                        >DC</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- Heroes Dropdown Link -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white font-secondary"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Heroes
+                  </a>
+                  <ul
+                    class="dropdown-menu fs-5 font-secondary text-center text-lg-start"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item text-white"
+                        href="../heroes/marvel-heroes.html"
+                        >Marvel</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-white"
+                        href="../heroes/dc-heroes.html"
+                        >DC</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-white"
+                        href="../heroes/all-heroes.html"
+                        >All Heroes</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- Teams Dropdown Link -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link link-active dropdown-toggle text-white font-secondary"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Teams
+                  </a>
+                  <ul
+                    class="dropdown-menu fs-5 font-secondary text-center text-lg-start"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item text-white active"
+                        href="./marvel-teams.html"
+                        >Marvel</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="./dc-teams.html"
+                        >DC</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-white"
+                        href="./all-teams.html"
+                        >All Teams</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- Movies & TV Dropdown Link -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white font-secondary"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Movies & TV
+                  </a>
+                  <ul
+                    class="dropdown-menu fs-5 font-secondary text-center text-lg-start"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item text-white"
+                        href="../upcoming/upcoming-movies.html"
+                        >Upcoming Movies</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-white"
+                        href="../upcoming/upcoming-tv.html"
+                        >Upcoming TV Series</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-white"
+                        href="../upcoming/upcoming-all.html"
+                        >All Upcoming</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- About Link -->
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white font-secondary"
+                    href="../../about.html"
+                    >About</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar Section Starts -->
+      </header>
+      <main>
+        <!-- Hero Section Starts -->
+        <section
+          class="marvel-hero bg-black container-fluid d-flex flex-column justify-content-between align-items-center overflow-hidden px-0"
+        >
+          <!-- Marvel Box -->
+          <div
+            class="bg-marvel-teams w-100 h-auto justify-content-center align-items-center d-flex flex-column py-5"
+          >
+            <a
+              href="../universes/marvel.html"
+              class="universes__marvel-link"
+              data-animate="animate__fadeIn animate-delay-05"
+            >
+              <img
+                src="../../assets/img/marvel/marvel-logo.png"
+                alt="Marvel Logo"
+                class="universes__marvel-logo"
+              />
+            </a>
+
+            <p
+              class="font-secondary text-white text-center fw-normal fs-5 w-50 mt-3"
+              data-animate="animate__fadeIn animate-delay-1"
+            >
+              The Marvel Universe centers on a wide range of teams, brought
+              together by shared conflicts, clashing personalities, and unique
+              abilities that shape their journeys and define their impact on the
+              world.
+            </p>
+          </div>
+        </section>
+        <!-- Hero Section Ends -->
+        <!-- Popular teams Section Starts -->
+        <section class="marvel-teams bg-black py-5">
+          <nav
+            style="--bs-breadcrumb-divider: &quot;>&quot;"
+            aria-label="breadcrumb"
+            data-animate="animate__fadeInLeft"
+            class="container d-flex justify-content-center justify-content-lg-start"
+          >
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item font-secondary fs-5 breadcrumb-home">
+                <a href="../../index.html" class="text-decoration-none">Home</a>
+              </li>
+              <li
+                class="breadcrumb-item font-secondary fs-5 text-white active"
+                style="--bs-breadcrumb-divider-color: white"
+              >
+                teams
+              </li>
+              <li
+                class="breadcrumb-item font-secondary fs-5 active"
+                aria-current="page"
+                style="--bs-breadcrumb-divider-color: white; color: #ff5c5c"
+              >
+                Marvel
+              </li>
+            </ol>
+          </nav>
+          <div
+            class="container d-flex flex-column justify-content-center align-items-center overflow-hidden pb-5"
+          >
+            <!-- Heading -->
+            <h1
+              class="display-5 font-secondary fw-medium text-white mt-3 mb-5"
+              data-animate="animate__fadeIn animate-delay-1"
+            >
+              Teams
+            </h1>
+            <!-- First Row -->
+            <div
+              class="row g-4 d-flex justify-content-evenly align-items-stretch"
+            >
+              <!-- Card 1 -->
+              <div
+                class="col-10 col-sm-7 col-md-5 col-lg-3 col-xxl-2"
+                data-animate="animate__fadeInUp"
+              >
+                <div class="card h-100 bg-marvel-color border-2 border-danger">
+                  <img
+                    src="../../assets/img/marvel/teams/avengers.jpg"
+                    class="card-img-top"
+                    alt="marvel Card"
+                    loading="lazy"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-white font-secondary fs-3">
+                      The Avengers
+                    </h5>
+                  </div>
+                  <div
+                    class="card-footer text-center border-danger border-top border-2"
+                  >
+                    <a
+                      name="details-btn"
+                      id="details-btn"
+                      class="btn text-white font-secondary fs-5"
+                      href="../teams/marvel/avengers/avengers.html"
+                      role="button"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="col-10 col-sm-7 col-md-5 col-lg-3 col-xxl-2"
+                data-animate="animate__fadeInUp"
+              >
+                <div class="card h-100 bg-marvel-color border-2 border-danger">
+                  <img
+                    src="../../assets/img/marvel/teams/x-men.webp"
+                    class="card-img-top"
+                    alt="marvel Card"
+                    loading="lazy"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-white font-secondary fs-3">
+                      X-Men
+                    </h5>
+                  </div>
+                  <div
+                    class="card-footer text-center border-danger border-top border-2"
+                  >
+                    <a
+                      name="details-btn"
+                      id="details-btn"
+                      class="btn text-white font-secondary fs-5"
+                      href="../teams/marvel/x-men/x-men.html"
+                      role="button"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="col-10 col-sm-7 col-md-5 col-lg-3 col-xxl-2"
+                data-animate="animate__fadeInUp"
+              >
+                <div class="card h-100 bg-marvel-color border-2 border-danger">
+                  <img
+                    src="../../assets/img/marvel/teams/fantastic-four.webp"
+                    class="card-img-top"
+                    alt="marvel Card"
+                    loading="lazy"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-white font-secondary fs-3">
+                      Fantastic Four
+                    </h5>
+                  </div>
+                  <div
+                    class="card-footer text-center border-danger border-top border-2"
+                  >
+                    <a
+                      name="details-btn"
+                      id="details-btn"
+                      class="btn text-white font-secondary fs-5"
+                      href="../teams/marvel/fantastic four/fantastic-four.html"
+                      role="button"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Row (Hidden) -->
+            <div
+              class="row g-4 d-flex justify-content-evenly align-items-stretch mt-4"
+            >
+              <!-- Card 1 -->
+              <div
+                class="col-10 col-sm-7 col-md-5 col-lg-3 col-xxl-2"
+                data-animate="animate__fadeInUp"
+              >
+                <div class="card h-100 bg-marvel-color border-2 border-danger">
+                  <img
+                    src="../../assets/img/marvel/teams/guardians.jpg"
+                    class="card-img-top"
+                    alt="marvel Card"
+                    loading="lazy"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-white font-secondary fs-3">
+                      Guardians of the Galaxy
+                    </h5>
+                  </div>
+                  <div
+                    class="card-footer text-center border-danger border-top border-2"
+                  >
+                    <a
+                      name="details-btn"
+                      id="details-btn"
+                      class="btn text-white font-secondary fs-5"
+                      href="../teams/marvel/guardians of the galaxy/guardians-of-the-galaxy.html"
+                      role="button"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div
+                class="col-10 col-sm-7 col-md-5 col-lg-3 col-xxl-2"
+                data-animate="animate__fadeInUp"
+              >
+                <div class="card h-100 bg-marvel-color border-2 border-danger">
+                  <img
+                    src="../../assets/img/marvel/teams/defenders.webp"
+                    class="card-img-top"
+                    alt="marvel Card"
+                    loading="lazy"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-white font-secondary fs-3">
+                      Defenders
+                    </h5>
+                  </div>
+                  <div
+                    class="card-footer text-center border-danger border-top border-2"
+                  >
+                    <a
+                      name="details-btn"
+                      id="details-btn"
+                      class="btn text-white font-secondary fs-5"
+                      href="../teams/marvel/defenders/defenders.html"
+                      role="button"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div
+                class="col-10 col-sm-7 col-md-5 col-lg-3 col-xxl-2"
+                data-animate="animate__fadeInUp"
+              >
+                <div class="card h-100 bg-marvel-color border-2 border-danger">
+                  <img
+                    src="../../assets/img/marvel/teams/thunderbolts.webp"
+                    class="card-img-top"
+                    alt="marvel Card"
+                    loading="lazy"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-white font-secondary fs-3">
+                      Thunderbolts
+                    </h5>
+                  </div>
+                  <div
+                    class="card-footer text-center border-danger border-top border-2"
+                  >
+                    <a
+                      name="details-btn"
+                      id="details-btn"
+                      class="btn text-white font-secondary fs-5"
+                      href="../teams/marvel/thunderbolts/thunderbolts.html"
+                      role="button"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third Row (Hidden) -->
+            <div
+              class="row g-4 d-flex justify-content-evenly align-items-stretch mt-4"
+            >
+              <!-- Card 1 -->
+              <div
+                class="col-10 col-sm-7 col-md-5 col-lg-3 col-xxl-2"
+                data-animate="animate__fadeInUp"
+              >
+                <div class="card h-100 bg-marvel-color border-2 border-danger">
+                  <img
+                    src="../../assets/img/marvel/teams/midnight-sons.png"
+                    class="card-img-top"
+                    alt="marvel Card"
+                    loading="lazy"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-white font-secondary fs-3">
+                      Midnight Sons
+                    </h5>
+                  </div>
+                  <div
+                    class="card-footer text-center border-danger border-top border-2"
+                  >
+                    <a
+                      name="details-btn"
+                      id="details-btn"
+                      class="btn text-white font-secondary fs-5"
+                      href="../teams/marvel/midnight sons/midnight-sons.html"
+                      role="button"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div
+                class="col-10 col-sm-7 col-md-5 col-lg-3 col-xxl-2"
+                data-animate="animate__fadeInUp"
+              >
+                <div class="card h-100 bg-marvel-color border-2 border-danger">
+                  <img
+                    src="../../assets/img/marvel/teams/inhumans.jpg"
+                    class="card-img-top"
+                    alt="marvel Card"
+                    loading="lazy"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-white font-secondary fs-3">
+                      Inhumans
+                    </h5>
+                  </div>
+                  <div
+                    class="card-footer text-center border-danger border-top border-2"
+                  >
+                    <a
+                      name="details-btn"
+                      id="details-btn"
+                      class="btn text-white font-secondary fs-5"
+                      href="../teams/marvel/inhumans/inhumans.html"
+                      role="button"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div
+                class="col-10 col-sm-7 col-md-5 col-lg-3 col-xxl-2"
+                data-animate="animate__fadeInUp"
+              >
+                <div class="card h-100 bg-marvel-color border-2 border-danger">
+                  <img
+                    src="../../assets/img/marvel/teams/eternals.jpg"
+                    class="card-img-top"
+                    alt="marvel Card"
+                    loading="lazy"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-white font-secondary fs-3">
+                      Eternals
+                    </h5>
+                  </div>
+                  <div
+                    class="card-footer text-center border-danger border-top border-2"
+                  >
+                    <a
+                      name="details-btn"
+                      id="details-btn"
+                      class="btn text-white font-secondary fs-5"
+                      href="../teams/marvel/eternals/eternals.html"
+                      role="button"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Popular teams Section Ends -->
+      </main>
+      <footer>
+        <!-- place footer here -->
+        <nav
+          class="navbar navbar-expand-lg bg-heroverse-primary py-3 px-3 px-lg-5"
+          id="mainFooter"
+        >
+          <div class="container-fluid d-flex flex-column">
+            <!-- Brand Logo Starts -->
+            <a
+              class="fw-bolder fs-2 text-decoration-none font-primary text-white"
+              href="../../index.html"
+              >Hero★Verse</a
+            >
+            <!-- Copyright Section -->
+            <p class="fw-medium fs-4 font-secondary text-white mb-0">
+              © Jegathiswaran Thiaghu
+            </p>
+            <div class="d-flex align-items-center justify-content-center gap-2">
+              <a
+                href="../../privacy-policy.html"
+                class="fw-normal fs-5 font-secondary mb-0 text-decoration-none"
+                id="dmca-link"
+                >Privacy Policy</a
+              >
+              <a
+                href="../../dmca.html"
+                class="fw-normal fs-5 font-secondary mb-0 text-decoration-none"
+                id="dmca-link"
+                >DMCA</a
+              >
+            </div>
+          </div>
+        </nav>
+      </footer>
+    </div>
+
+    <!-- Go Up Floating Button -->
+    <button
+      id="goTopBtn"
+      class="position-fixed bottom-0 end-0 mb-3 me-3 btn rounded-circle d-none d-flex align-items-center shadow-lg animate__animated"
+      style="
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: #2f0d68;
+        color: white;
+        z-index: 10;
+        transition: all 0.3s ease-in-out;
+        border: 2px solid white;
+      "
+      onclick="scrollToTop()"
+      onmouseover="
+        this.style.backgroundColor = '#42109a';
+        this.style.transform = 'translateY(-3px)';
+      "
+      onmouseout="
+        this.style.backgroundColor = '#2f0d68';
+        this.style.transform = 'translateY(0)';
+      "
+    >
+      <i class="fas fa-chevron-up" style="font-size: 0.75rem"></i>
+    </button>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS Scripts -->
+    <!-- Spinner -->
+    <script src="../../assets/js/script.js"></script>
+
+    <!-- Button Go Up -->
+    <script>
+      const goTopBtn = document.getElementById("goTopBtn");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          goTopBtn.classList.remove("d-none");
+          goTopBtn.classList.add("animate__fadeInUp");
+          goTopBtn.classList.remove("animate__fadeOutDown");
+        } else {
+          goTopBtn.classList.add("animate__fadeOutDown");
+          goTopBtn.classList.remove("animate__fadeInUp");
+          // Hide after animation completes
+          setTimeout(() => {
+            if (goTopBtn.classList.contains("animate__fadeOutDown")) {
+              goTopBtn.classList.add("d-none");
+            }
+          }, 500);
+        }
+      });
+
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>

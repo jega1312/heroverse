@@ -1,0 +1,30 @@
+/* Hidden rows initially */
+.hidden-rows {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.hidden-rows.show {
+  max-height: 10000px;
+  transition: max-height 0.5s ease-in;
+}
+
+#view-more-btn {
+  transition: all 0.3s ease;
+}
+
+.btn-width {
+  width: 10%;
+}
+
+.trailer-btn {
+  background-color: #2f0d68; // lighter red, contrasts with #9f0712
+}
+
+.trailer-btn:hover {
+  background-color: #542b9a; // slightly lighter red on hover
+  transition: background-color 0.3s ease-in-out;
+}
+
+

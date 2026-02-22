@@ -1,0 +1,369 @@
+@use "../abstracts/variables" as var;
+
+.bg-marvel-color {
+  background-color: var.$marvel-accent !important;
+}
+
+.bg-dc-color {
+  background-color: var.$dc-accent !important;
+}
+
+.hero {
+  &__heading {
+    font-size: 3rem !important;
+
+    @media (min-width: 768px) {
+      font-size: 4rem !important;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 4.85rem !important;
+    }
+  }
+}
+
+.universes {
+  &__marvel-box,
+  &__dc-box {
+    width: 100%;
+    height: 24vh;
+    position: relative;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+      height: 21vh;
+    }
+
+    @media (min-width: 992px) {
+      width: 50%;
+      height: 40vh;
+    }
+
+    @media (min-width: 1400px) {
+      height: 50vh;
+    }
+
+    @media (min-width: 1536px) {
+      height: 45vh;
+    }
+  }
+
+  &__marvel-box::before,
+  &__dc-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(100%);
+    transition: transform 0.6s ease;
+    z-index: 0;
+  }
+
+  &__marvel-box::before {
+    background-image: url("../../../assets/img/marvel/marvel-hero.jpg");
+  }
+
+  &__dc-box::before {
+    background-image: url("../../../assets/img/dc/dc-hero.jpg");
+  }
+
+  &__marvel-box:hover::before,
+  &__dc-box:hover::before {
+    transform: translateY(0);
+  }
+
+  // Overlay
+  &__marvel-box::after,
+  &__dc-box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); // dark overlay
+    opacity: 0; // hidden initially
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1; // above background, below content
+  }
+
+  &__marvel-box:hover::after,
+  &__dc-box:hover::after {
+    opacity: 1; // show overlay
+  }
+
+  &__marvel-link,
+  &__dc-link {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+  }
+
+  &__marvel-link:hover .universes__marvel-logo,
+  &__dc-link:hover .universes__dc-logo {
+    transform: scale(1.075);
+  }
+
+  &__marvel-logo {
+    width: 8rem;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+
+    @media (min-width: 768px) {
+      width: 9rem;
+    }
+
+    @media (min-width: 992px) {
+      width: 10rem;
+    }
+  }
+
+  &__dc-logo {
+    width: 6rem;
+    z-index: 2;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    @media (min-width: 768px) {
+      width: 5rem;
+    }
+
+    @media (min-width: 992px) {
+      width: 8rem;
+    }
+  }
+}
+
+// Universe Page
+// Marvel
+
+.bg-marvel-heroes,
+.bg-marvel-teams {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  img,
+  p {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.bg-marvel-heroes {
+  background-image: url("../../assets/img/marvel/marvel-heroes-bg.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-marvel-teams {
+  background-image: url("../../assets/img/marvel/marvel-teams-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+//DC
+.bg-dc-heroes,
+.bg-dc-teams {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  img,
+  p {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.bg-dc-heroes {
+  background-image: url("../../assets/img/dc/dc-heroes-bg.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-dc-teams {
+  background-image: url("../../assets/img/dc/dc-teams-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// DMCA Page
+.dmca-heading,
+.email-link {
+  color: #7c4dff;
+  text-decoration: none;
+}
+
+.dmca-subheading,
+.email-link:hover,
+#dmca-link {
+  color: #b296ff;
+  transition: color 0.3s ease-in-out;
+}
+
+#dmca-link:hover {
+  color: #fff;
+}
+
+// Marvel Universe Logo
+.marvel-universe-logo {
+  width: 5rem;
+  z-index: 2;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.075);
+  }
+}
+
+// DC Universe Logo
+.dc-universe-logo {
+  width: 5rem;
+  z-index: 2;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.075);
+  }
+
+  @media (min-width: 992px) {
+    width: 6rem;
+  }
+}
+
+.dc-universe-logo-upcoming {
+  width: 4rem;
+  z-index: 2;
+  height: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.075);
+  }
+}
+
+// Upcoming Pages
+.bg-upcoming-hero {
+  background-color: #b296ff;
+}
+
+.title-logo {
+  width: 60% !important;
+  height: auto;
+
+  @media (min-width: 768px) {
+    width: 45% !important;
+  }
+
+  @media (min-width: 1400px) {
+    width: 35% !important;
+  }
+}
+
+.cursor-auto {
+  cursor: default;
+}
+
+// Heroes Page
+.left-content-width,
+.right-content-width {
+  width: 100%;
+
+  @media (min-width: 992px) {
+    width: 50%;
+  }
+}
+
+.bg-marvel-info {
+  background-color: #7a0f14;
+}
+
+.bg-dc-info {
+  background-color: #162c70;
+}
+
+// Teams
+.icon-img {
+  width: 50px;
+  height: 50px;
+  max-width: 50px;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: block; // Add this to remove any default inline spacing
+
+  // lg (992px - 1199px)
+  @media (min-width: 992px) {
+    width: 39px;
+    height: 39px;
+  }
+
+  // xl (1200px - 1399px)
+  @media (min-width: 1200px) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+// Add specific styling for the container
+a.rounded-5,
+div.rounded-5 {
+  display: inline-block;
+  line-height: 0; // Remove line-height spacing
+
+  img {
+    vertical-align: top; // Remove baseline spacing
+  }
+}
+
+// Upcoming Movies & TV Pages
+.left-content-upcoming,
+.right-content-upcoming {
+  width: 100%;
+
+  @media (min-width: 992px) {
+    width: 50%;
+  }
+}

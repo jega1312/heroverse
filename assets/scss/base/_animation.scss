@@ -1,0 +1,38 @@
+[data-animate] {
+  opacity: 0;
+}
+
+[data-animate].animate__animated {
+  opacity: revert;
+}
+
+.animate-delay-05 {
+  animation-delay: 0.5s;
+}
+.animate-delay-1 {
+  animation-delay: 1s;
+}
+.animate-delay-15 {
+  animation-delay: 1.5s;
+}
+.animate-delay-2 {
+  animation-delay: 2s;
+}
+.animate-delay-25 {
+  animation-delay: 2.5s;
+}
+.animate-delay-3 {
+  animation-delay: 3s;
+}
+.animate-delay-35 {
+  animation-delay: 3.5s;
+}
+.animate-delay-4 {
+  animation-delay: 4s;
+}
+.animate-delay-45 {
+  animation-delay: 4.5s;
+}
+.animate-delay-5 {
+  animation-delay: 5s;
+}

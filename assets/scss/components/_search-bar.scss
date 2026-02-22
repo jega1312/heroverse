@@ -1,0 +1,19 @@
+.all-heroes{
+    &__search{
+        width: 100%;
+
+        @media (min-width: 768px){
+            width: 75%;
+        }
+    }
+}
+
+.all-teams{
+    &__search{
+        width: 100%;
+
+        @media (min-width: 768px){
+            width: 75%;
+        }
+    }
+}

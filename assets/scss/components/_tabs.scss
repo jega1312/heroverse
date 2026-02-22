@@ -1,0 +1,95 @@
+.tabs-logo {
+  width: auto;
+  height: 2rem;
+}
+
+.nav-pills .nav-link {
+  opacity: 0.7;
+  transition:
+    opacity 0.3s,
+    transform 0.2s,
+    border 0.3s;
+  border: 2px solid transparent; /* reserve space */
+  border-radius: 50px;
+}
+
+.nav-pills .nav-link:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.nav-pills .nav-link.active {
+  opacity: 1;
+  transform: scale(1.05);
+  border-color: #fff; /* now the border fades in smoothly */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+/* All tab pill hover & active text */
+#all-tab:hover,
+#all-tab.active {
+  color: #ffffff !important;
+}
+
+/* Fix whitespace below footer from hidden tab panes */
+.tab-pane:not(.active) {
+  display: none !important;
+}
+
+/* Prevent animating cards from extending page height */
+.heroes-container, .teams-container {
+  overflow: hidden;
+}
+
+/* Ensure the page wrapper doesn't stretch beyond visible content */
+.position-relative {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobile: hide or simplify */
+@media (max-width: 767px) {
+  .breadcrumb {
+    display: none;
+  }
+}
+
+.breadcrumb-home a {
+  color: #7c4dff;
+  text-decoration: none;
+}
+
+.breadcrumb-home a:hover {
+  color: #b296ff;
+  transition: color 0.3s ease-in-out;
+}
+
+.breadcrumb-marvel a {
+  color: #ff5c5c; // lighter red, contrasts with #9f0712
+  text-decoration: none;
+}
+
+.breadcrumb-marvel a:hover {
+  color: #ff8c8c; // slightly lighter red on hover
+  transition: color 0.3s ease-in-out;
+}
+
+.breadcrumb-dc a {
+  color: #6ea1ff !important; // lighter blue for contrast against #1c398e
+  text-decoration: none;
+}
+
+.breadcrumb-dc a:hover {
+  color: #9ec5ff !important;
+  transition: color 0.3s ease-in-out;
+}
+
+.breadcrumb-upcoming a {
+  color: #b296ff !important;
+  text-decoration: none;
+}
+
+.breadcrumb-upcoming a:hover {
+  color: #c8b3ff !important;
+  transition: color 0.3s ease-in-out;
+}

@@ -1,0 +1,62 @@
+@use "../abstracts/variables" as var;
+
+.bg-heroverse-primary {
+  background-color: var.$heroverse-primary !important;
+}
+
+.bg-marvel-color {
+  background-color: var.$marvel-accent !important;
+}
+
+.bg-dc-color {
+  background-color: var.$dc-accent !important;
+}
+
+.card-body {
+  flex: 1;
+}
+
+.marvel-card-logo {
+  width: 5rem;
+  height: auto;
+}
+
+.dc-card-logo {
+  width: 3rem;
+  height: auto;
+}
+
+#details-btn,
+#view-more-btn-heroes,
+#view-more-btn-teams {
+  background-color: var.$heroverse-primary;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#details-btn:hover,
+#view-more-btn-heroes:hover,
+#view-more-btn-teams:hover {
+  background-color: #4e16ac; // pick the lighter color manually
+}
+
+
+.marvel-carousel-logo {
+  width: 5rem !important;
+  height: auto !important;
+  margin: 0 auto !important;
+}
+
+.dc-carousel-logo {
+  width: 3rem !important;
+  height: auto !important;
+  margin: 0 auto !important;
+}
+
+// Upcoming Gallery Card Section 
+.gallery-hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-hover:hover {
+  transform: scale(1.05);
+}
