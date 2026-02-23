@@ -290,7 +290,9 @@
                   aria-current="page"
                   style="--bs-breadcrumb-divider-color: white"
                 >
-                 <a href="all-heroes.html" class="text-decoration-none">All Heroes</a>
+                  <a href="all-heroes.html" class="text-decoration-none"
+                    >All Heroes</a
+                  >
                 </li>
               </ol>
             </nav>
@@ -2505,30 +2507,6 @@
           }
         });
       });
-
-      // Button Go Up
-      const goTopBtn = document.getElementById("goTopBtn");
-
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 200) {
-          goTopBtn.classList.remove("d-none");
-          goTopBtn.classList.add("animate__fadeInUp");
-          goTopBtn.classList.remove("animate__fadeOutDown");
-        } else {
-          goTopBtn.classList.add("animate__fadeOutDown");
-          goTopBtn.classList.remove("animate__fadeInUp");
-          // Hide after animation completes
-          setTimeout(() => {
-            if (goTopBtn.classList.contains("animate__fadeOutDown")) {
-              goTopBtn.classList.add("d-none");
-            }
-          }, 500);
-        }
-      });
-
-      function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
     </script>
   </body>
 </html>

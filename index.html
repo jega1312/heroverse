@@ -1129,29 +1129,6 @@
     <script src="./assets/js/script.js"></script>
 
     <script>
-      // Go to Top Button
-      const goTopBtn = document.getElementById("goTopBtn");
-
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 200) {
-          goTopBtn.classList.remove("d-none");
-          goTopBtn.classList.add("animate__fadeInUp");
-          goTopBtn.classList.remove("animate__fadeOutDown");
-        } else {
-          goTopBtn.classList.add("animate__fadeOutDown");
-          goTopBtn.classList.remove("animate__fadeInUp");
-          // Hide after animation completes
-          setTimeout(() => {
-            if (goTopBtn.classList.contains("animate__fadeOutDown")) {
-              goTopBtn.classList.add("d-none");
-            }
-          }, 500);
-        }
-      });
-
-      function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
 
       // Owl Carousel Initialization
       $(document).ready(function () {
