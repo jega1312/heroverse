@@ -37,7 +37,8 @@
 }
 
 /* Prevent animating cards from extending page height */
-.heroes-container, .teams-container {
+.heroes-container,
+.teams-container {
   overflow: hidden;
 }
 
@@ -48,9 +49,9 @@
 }
 
 /* Mobile: hide or simplify */
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .breadcrumb {
-    display: none;
+    display: none !important;
   }
 }
 
