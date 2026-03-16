@@ -1096,4 +1096,8 @@ div.rounded-5 img {
   animation-delay: 5s;
 }
 
+html, body {
+  background-color: #2f0d68;
+}
+
 /*# sourceMappingURL=main.css.map */
