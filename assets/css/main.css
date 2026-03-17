@@ -625,7 +625,7 @@ div.rounded-5 img {
   border-radius: 50%;
 }
 #upcoming-arrow .owl-dot.active span {
-  background: #fff;
+  background: #b296ff !important;
 }
 @media (min-width: 576px) {
   #upcoming-arrow .owl-nav button {
@@ -702,7 +702,7 @@ div.rounded-5 img {
   border-radius: 50%;
 }
 #upcoming-no-arrow .owl-dot.active span {
-  background: #fff;
+  background: #b296ff !important;
 }
 @media (min-width: 576px) {
   #upcoming-no-arrow .owl-nav button {
@@ -778,7 +778,7 @@ div.rounded-5 img {
   border-radius: 50%;
 }
 #heroes-slider .owl-dot.active span {
-  background: #fff;
+  background: #b296ff !important;
 }
 @media (min-width: 576px) {
   #heroes-slider .owl-nav button {
