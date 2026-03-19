@@ -1048,6 +1048,10 @@ div.rounded-5 img {
   font-family: "Bebas Neue", sans-serif;
 }
 
+.text-justify {
+  text-align: justify !important;
+}
+
 [data-animate] {
   opacity: 0;
 }
