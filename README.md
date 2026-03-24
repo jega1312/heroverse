@@ -20,12 +20,14 @@
 ## 📸 Preview
 
 ### Desktop View 🖥
+
 ![Home Page](./screenshots/homepage.png)
 ![Heroes Page](./screenshots/heroes.png)
 ![Hero Detail](./screenshots/hero.png)
 ![Team Detail](./screenshots/team.png)
 
 ### Mobile View 📱
+
 ![Mobile View](./screenshots/mobile.png)
 
 ---
@@ -40,14 +42,14 @@ Hero★Verse is a **fan-made informational hub** covering both the Marvel and DC
 
 ## ⚙️ Tech Stack
 
-| Technology | Version | Purpose |
-|---|---|---|
-| HTML5 | — | Semantic page structure across all pages |
-| Bootstrap | 5 | Responsive grid, navbar, components |
-| Sass/SCSS | 1.97.3 | Modular stylesheets with variables, nesting & component partials |
-| CSS3 | — | Base styling and custom properties |
-| JavaScript | ES6 | Filter functionality, loading screen, interactivity |
-| Vercel | — | Static site deployment & hosting |
+| Technology | Version | Purpose                                                          |
+| ---------- | ------- | ---------------------------------------------------------------- |
+| HTML5      | —       | Semantic page structure across all pages                         |
+| Bootstrap  | 5       | Responsive grid, navbar, components                              |
+| Sass/SCSS  | 1.97.3  | Modular stylesheets with variables, nesting & component partials |
+| CSS3       | —       | Base styling and custom properties                               |
+| JavaScript | ES6     | Filter functionality, loading screen, interactivity              |
+| Vercel     | —       | Static site deployment & hosting                                 |
 
 ---
 
@@ -80,56 +82,63 @@ npm install sass
 ## 📄 Pages Overview
 
 ### Main Pages
-| Page | Description |
-|---|---|
-| `index.html` | Homepage — Popular Heroes, Teams, and Upcoming sections |
-| `about.html` | Project overview, disclaimer, and contact info |
-| `privacy-policy.html` | Privacy policy page |
-| `dmca.html` | DMCA notice page |
+
+| Page                  | Description                                             |
+| --------------------- | ------------------------------------------------------- |
+| `index.html`          | Homepage — Popular Heroes, Teams, and Upcoming sections |
+| `about.html`          | Project overview, disclaimer, and contact info          |
+| `privacy-policy.html` | Privacy policy page                                     |
+| `dmca.html`           | DMCA notice page                                        |
 
 ### Universe Pages
-| Page | Description |
-|---|---|
+
+| Page                    | Description                          |
+| ----------------------- | ------------------------------------ |
 | `universes/marvel.html` | Marvel hub — Heroes, Teams, Upcoming |
-| `universes/dc.html` | DC hub — Heroes, Teams, Upcoming |
+| `universes/dc.html`     | DC hub — Heroes, Teams, Upcoming     |
 
 ### Hero Pages
-| Page | Description |
-|---|---|
-| `heroes/all-heroes.html` | All heroes gallery with Marvel/DC filter tabs |
-| `heroes/marvel-heroes.html` | Marvel heroes gallery |
-| `heroes/dc-heroes.html` | DC heroes gallery |
-| `heroes/marvel/[hero]/` | Individual Marvel hero detail pages (12 heroes) |
-| `heroes/dc/[hero]/` | Individual DC hero detail pages (12 heroes) |
+
+| Page                        | Description                                     |
+| --------------------------- | ----------------------------------------------- |
+| `heroes/all-heroes.html`    | All heroes gallery with Marvel/DC filter tabs   |
+| `heroes/marvel-heroes.html` | Marvel heroes gallery                           |
+| `heroes/dc-heroes.html`     | DC heroes gallery                               |
+| `heroes/marvel/[hero]/`     | Individual Marvel hero detail pages (12 heroes) |
+| `heroes/dc/[hero]/`         | Individual DC hero detail pages (12 heroes)     |
 
 ### Team Pages
-| Page | Description |
-|---|---|
-| `teams/all-teams.html` | All teams gallery with Marvel/DC filter tabs |
-| `teams/marvel-teams.html` | Marvel teams gallery |
-| `teams/dc-teams.html` | DC teams gallery |
-| `teams/marvel/[team]/` | Individual Marvel team pages (9 teams) |
-| `teams/dc/[team]/` | Individual DC team pages (9 teams) |
+
+| Page                      | Description                                  |
+| ------------------------- | -------------------------------------------- |
+| `teams/all-teams.html`    | All teams gallery with Marvel/DC filter tabs |
+| `teams/marvel-teams.html` | Marvel teams gallery                         |
+| `teams/dc-teams.html`     | DC teams gallery                             |
+| `teams/marvel/[team]/`    | Individual Marvel team pages (9 teams)       |
+| `teams/dc/[team]/`        | Individual DC team pages (9 teams)           |
 
 ### Upcoming Movies & TV Pages
-| Page | Description |
-|---|---|
-| `upcoming/upcoming-movies.html` | All upcoming movies |
-| `upcoming/upcoming-tv.html` | All upcoming TV series |
-| `upcoming/upcoming-all.html` | All upcoming content combined |
+
+| Page                              | Description                          |
+| --------------------------------- | ------------------------------------ |
+| `upcoming/upcoming-movies.html`   | All upcoming movies                  |
+| `upcoming/upcoming-tv.html`       | All upcoming TV series               |
+| `upcoming/upcoming-all.html`      | All upcoming content combined        |
 | `upcoming/movies/marvel/[title]/` | Marvel movie detail pages (4 titles) |
-| `upcoming/movies/dc/[title]/` | DC movie detail pages (2 titles) |
-| `upcoming/tv/marvel/[title]/` | Marvel TV detail pages (4 series) |
-| `upcoming/tv/dc/[title]/` | DC TV detail pages (1 series) |
+| `upcoming/movies/dc/[title]/`     | DC movie detail pages (2 titles)     |
+| `upcoming/tv/marvel/[title]/`     | Marvel TV detail pages (4 series)    |
+| `upcoming/tv/dc/[title]/`         | DC TV detail pages (1 series)        |
 
 ---
 
 ## 🦸 Heroes Covered
 
 ### Marvel (12 Heroes)
+
 Spider-Man · Iron Man · Thor · Hulk · Captain America · Black Widow · Doctor Strange · Scarlet Witch · Wolverine · Deadpool · Black Panther · Daredevil
 
 ### DC (12 Heroes)
+
 Batman · Superman · Wonder Woman · The Flash · Aquaman · Green Lantern · Green Arrow · Cyborg · Hawkgirl · Martian Manhunter · Shazam · Blue Beetle
 
 ---
@@ -137,9 +146,11 @@ Batman · Superman · Wonder Woman · The Flash · Aquaman · Green Lantern · G
 ## 🛡️ Teams Covered
 
 ### Marvel (9 Teams)
+
 The Avengers · X-Men · Fantastic Four · Guardians of the Galaxy · Defenders · Thunderbolts · Midnight Sons · Inhumans · Eternals
 
 ### DC (9 Teams)
+
 Justice League · Justice League Dark · Teen Titans · The Suicide Squad · Watchmen · Creature Commandos · Shazam Family · The Authority · The Terrifics
 
 ---
@@ -147,23 +158,25 @@ Justice League · Justice League Dark · Teen Titans · The Suicide Squad · Wat
 ## 🎬 Upcoming Content Covered
 
 ### Movies
-| Title | Universe |
-|---|---|
-| Avengers: Doomsday | Marvel |
-| Avengers: Secret Wars | Marvel |
-| Spider-Man: Brand New Day | Marvel |
-| Spider-Man: Beyond the Spider-Verse | Marvel |
-| Supergirl | DC |
-| Clayface | DC |
+
+| Title                               | Universe |
+| ----------------------------------- | -------- |
+| Avengers: Doomsday                  | Marvel   |
+| Avengers: Secret Wars               | Marvel   |
+| Spider-Man: Brand New Day           | Marvel   |
+| Spider-Man: Beyond the Spider-Verse | Marvel   |
+| Supergirl                           | DC       |
+| Clayface                            | DC       |
 
 ### TV Series
-| Title | Universe |
-|---|---|
-| Daredevil: Born Again | Marvel |
-| Spider-Noir | Marvel |
-| Punisher: One Shot | Marvel |
-| Vision Quest | Marvel |
-| Lanterns | DC |
+
+| Title                 | Universe |
+| --------------------- | -------- |
+| Daredevil: Born Again | Marvel   |
+| Spider-Noir           | Marvel   |
+| The Punisher: One Last Kill    | Marvel   |
+| Vision Quest          | Marvel   |
+| Lanterns              | DC       |
 
 ---
 
@@ -306,7 +319,7 @@ heroverse/
             ├── marvel/
             │   ├── born again/               # born-again.html + poster + 3 stills
             │   ├── spider-noir/              # spider-noir.html + poster + 3 stills
-            │   ├── punisher one shot/        # punisher-one-shot.html + poster
+            │   ├── punisher one last kill/        # punisher-one-last-kill.html + poster
             │   └── vision quest/             # vision-quest.html + poster
             └── dc/
                 └── lanterns/                 # lanterns.html + poster + 3 stills
@@ -329,6 +342,7 @@ heroverse/
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js v14+
 - npm
 
