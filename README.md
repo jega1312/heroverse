@@ -399,7 +399,7 @@ vercel deploy
 
 [![GitHub](https://img.shields.io/badge/GitHub-jega1312-181717?style=flat&logo=github)](https://github.com/jega1312)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-jegathiswaran--thiaghu-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/jegathiswaran-thiaghu/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-jega1312.github.io-FF5722?style=flat&logo=google-chrome&logoColor=white)](https://jega1312.github.io/portfolio/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-jega1312.github.io-0A66C2?style=flat)](https://jega1312.github.io/portfolio/)
 
 ---
 
