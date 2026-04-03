@@ -1101,6 +1101,7 @@ div.rounded-5 img {
 }
 
 html, body {
+  scroll-behavior: smooth;
   background-color: #000;
 }
 
