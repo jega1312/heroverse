@@ -325,7 +325,7 @@
                   </a>
                 </div>
 
-                <!-- Button trigger modal
+                <!-- Button trigger modal -->
                 <button
                   type="button"
                   class="btn text-white trailer-btn w-50 mt-4 border-2 border-white font-secondary fs-5"
@@ -334,7 +334,7 @@
                 >
                   <i class="fas fa-play-circle me-1"></i>
                   Play Trailer
-                </button> -->
+                </button>
               </div>
             </div>
 
@@ -363,7 +363,7 @@
                 class="fs-3 font-secondary text-white fst-italic"
                 data-animate="animate__fadeInUp animate-delay-1"
               >
-                Release Date: 28/10/2026
+                Release Date: 23/10/2026
               </p>
 
               <div
@@ -504,7 +504,7 @@
         <!-- Popular Heroes Section Ends -->
       </main>
 
-      <!-- Modal
+      Modal
                 <div
                   class="modal fade"
                   id="exampleModal"
@@ -527,7 +527,7 @@
                       <div class="modal-body p-0">
                         <div class="ratio ratio-16x9">
                           <iframe
-                            data-src="https://www.youtube-nocookie.com/embed/YqdAEdkHrwo?si=3IaJstooMFWYIVez"
+                            data-src="https://www.youtube-nocookie.com/embed/6IxPD-jNdwM?si=sdFScd7LR-R6X3qM"
                             src=""
                             title="YouTube video player"
                             frameborder="0"
@@ -547,11 +547,11 @@
                       </div>
                     </div>
                   </div>
-                </div> -->
+                </div>
       <footer>
         <!-- place footer here -->
         <nav
-          class="navbar navbar-expand-lg bg-heroverse-primary py-3 px-3 px-lg-5"
+          class="navbar navbar-expand-lg bg-heroverse-primary p-3 px-lg-5"
           id="mainFooter"
         >
           <div class="container-fluid d-flex flex-column">
@@ -651,16 +651,16 @@
         return new bootstrap.Tooltip(tooltipTriggerEl);
       });
 
-      //   const modal = document.getElementById("exampleModal");
-      //   const iframe = modal.querySelector("iframe");
+        const modal = document.getElementById("exampleModal");
+        const iframe = modal.querySelector("iframe");
 
-      //   modal.addEventListener("show.bs.modal", function () {
-      //     iframe.src = iframe.dataset.src;
-      //   });
+        modal.addEventListener("show.bs.modal", function () {
+          iframe.src = iframe.dataset.src;
+        });
 
-      //   modal.addEventListener("hidden.bs.modal", function () {
-      //     iframe.src = "";
-      //   });
+        modal.addEventListener("hidden.bs.modal", function () {
+          iframe.src = "";
+        });
     </script>
   </body>
 </html>

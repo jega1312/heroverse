@@ -574,7 +574,7 @@ div.rounded-5 img {
   }
 }
 
-#upcoming-arrow .owl-nav {
+#marvel-carousel .owl-nav, #dc-carousel .owl-nav {
   position: absolute;
   top: 50%;
   width: 100%;
@@ -585,7 +585,7 @@ div.rounded-5 img {
   justify-content: space-between;
   pointer-events: none;
 }
-#upcoming-arrow .owl-nav button {
+#marvel-carousel .owl-nav button, #dc-carousel .owl-nav button {
   pointer-events: all;
   color: #fff;
   border-radius: 50%;
@@ -598,56 +598,83 @@ div.rounded-5 img {
   justify-content: center;
   opacity: 1;
 }
-#upcoming-arrow .owl-nav .owl-prev,
-#upcoming-arrow .owl-nav .owl-next {
+#marvel-carousel .owl-nav .owl-prev,
+#marvel-carousel .owl-nav .owl-next, #dc-carousel .owl-nav .owl-prev,
+#dc-carousel .owl-nav .owl-next {
   color: #fff !important;
   font-size: 1.25rem !important;
   background-color: #2f0d68 !important;
 }
-#upcoming-arrow .owl-nav .owl-prev:hover,
-#upcoming-arrow .owl-nav .owl-next:hover {
+#marvel-carousel .owl-nav .owl-prev:hover,
+#marvel-carousel .owl-nav .owl-next:hover, #dc-carousel .owl-nav .owl-prev:hover,
+#dc-carousel .owl-nav .owl-next:hover {
   background-color: rgba(46, 13, 104, 0.6352941176) !important;
 }
-#upcoming-arrow .owl-dots {
+#marvel-carousel .owl-dots, #dc-carousel .owl-dots {
   display: block;
   text-align: center;
   margin-top: 1rem;
 }
-#upcoming-arrow .owl-dot {
+#marvel-carousel .owl-dot, #dc-carousel .owl-dot {
   margin: 0 3px;
   cursor: pointer;
 }
-#upcoming-arrow .owl-dot span {
+#marvel-carousel .owl-dot span, #dc-carousel .owl-dot span {
   width: 10px;
   height: 10px;
   background: rgba(255, 255, 255, 0.2941176471);
   display: block;
   border-radius: 50%;
 }
-#upcoming-arrow .owl-dot.active span {
+#marvel-carousel .owl-dot.active span, #dc-carousel .owl-dot.active span {
   background: #b296ff !important;
 }
 @media (min-width: 576px) {
-  #upcoming-arrow .owl-nav button {
+  #marvel-carousel .owl-nav button, #dc-carousel .owl-nav button {
     width: 48px;
     height: 48px;
   }
 }
 @media (min-width: 768px) {
-  #upcoming-arrow .owl-nav {
+  #marvel-carousel .owl-nav, #dc-carousel .owl-nav {
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
     margin: 0 auto !important;
   }
-  #upcoming-arrow .owl-nav .owl-prev,
-  #upcoming-arrow .owl-nav .owl-next {
+  #marvel-carousel .owl-nav .owl-prev,
+  #marvel-carousel .owl-nav .owl-next, #dc-carousel .owl-nav .owl-prev,
+  #dc-carousel .owl-nav .owl-next {
     color: #fff !important;
     font-size: 1.5rem !important;
   }
-  #upcoming-arrow .owl-dots {
+  #marvel-carousel .owl-dots, #dc-carousel .owl-dots {
     display: block !important;
   }
+}
+
+#marvel-carousel .owl-nav .owl-prev,
+#marvel-carousel .owl-nav .owl-next {
+  background-color: #b30000 !important;
+}
+#marvel-carousel .owl-nav .owl-prev:hover,
+#marvel-carousel .owl-nav .owl-next:hover {
+  background-color: rgba(179, 0, 0, 0.6) !important;
+}
+#marvel-carousel .owl-dot.active span {
+  background: #ff4d4d !important;
+}
+
+#dc-carousel .owl-nav .owl-prev,
+#dc-carousel .owl-nav .owl-next {
+  background-color: #0d47a1 !important;
+}
+#dc-carousel .owl-nav .owl-prev:hover,
+#dc-carousel .owl-nav .owl-next:hover {
+  background-color: rgba(13, 71, 161, 0.6) !important;
+}
+#dc-carousel .owl-dot.active span {
+  background: #42a5f5 !important;
 }
 
 #upcoming-no-arrow .owl-nav {

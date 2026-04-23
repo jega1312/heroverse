@@ -356,7 +356,7 @@
               </h1>
 
               <div
-                id="upcoming-arrow"
+                id="marvel-carousel"
                 class="owl-carousel position-relative mb-3"
                 data-animate="animate__fadeIn animate-delay-2"
               >
@@ -766,7 +766,7 @@
             </h1>
 
             <div
-              id="upcoming-no-arrow"
+              id="dc-carousel"
               class="owl-carousel position-relative mb-3"
               data-animate="animate__fadeIn animate-delay-2"
             >
@@ -811,6 +811,48 @@
                 </div>
               </div>
               <!-- Project 1 Ends -->
+
+              <!-- Project 2 Starts -->
+              <div
+                class="item d-flex justify-content-center align-items-stretch"
+              >
+                <div class="col-8">
+                  <div class="ratio ratio-16x9">
+                    <iframe
+                      data-src="https://www.youtube-nocookie.com/embed/6IxPD-jNdwM?si=sdFScd7LR-R6X3qM"
+                      src=""
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="
+                        accelerometer;
+                        autoplay;
+                        clipboard-write;
+                        encrypted-media;
+                        gyroscope;
+                        picture-in-picture;
+                        web-share;
+                      "
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div class="text-center d-flex flex-column">
+                    <img
+                      src="../../assets/img/dc/upcoming/clayface-logo.png"
+                      alt="Clayface Logo"
+                      class="mx-auto title-logo"
+                    />
+
+                    <p class="text-white font-secondary fs-5 mb-0">
+                      Official Teaser
+                    </p>
+                    <p class="text-white font-secondary fs-5 mb-0">
+                      © Warner Bros. Discovery
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 2 Ends -->
             </div>
             <h1
               class="display-6 font-secondary fw-medium text-white my-5"
@@ -1003,7 +1045,20 @@
 
     <script>
       $(document).ready(function () {
-        $("#upcoming-arrow, #upcoming-no-arrow").owlCarousel({
+        $("#marvel-carousel").owlCarousel({
+          loop: true,
+          items: 1,
+          nav: true,
+          navText: [
+            "<i class='fas fa-chevron-left'></i>",
+            "<i class='fas fa-chevron-right'></i>",
+          ],
+          dots: true,
+          autoplay: false,
+          smartSpeed: 800,
+        });
+
+        $("#dc-carousel").owlCarousel({
           loop: true,
           items: 1,
           nav: true,
@@ -1052,8 +1107,8 @@
           });
         }
 
-        setupLazyYouTube("#upcoming-arrow");
-        setupLazyYouTube("#upcoming-no-arrow");
+        setupLazyYouTube("#marvel-carousel");
+        setupLazyYouTube("#dc-carousel");
       });
     </script>
   </body>

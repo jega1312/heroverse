@@ -86,7 +86,7 @@
 }
 
 // Upcoming Pages Carousel
-#upcoming-arrow {
+#marvel-carousel, #dc-carousel {
   .owl-nav {
     position: absolute;
     top: 50%;
@@ -170,6 +170,38 @@
     .owl-dots {
       display: block !important;
     }
+  }
+}
+
+#marvel-carousel {
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next {
+    background-color: #b30000 !important;
+  }
+
+  .owl-nav .owl-prev:hover,
+  .owl-nav .owl-next:hover {
+    background-color: rgba(179, 0, 0, 0.6) !important;
+  }
+
+  .owl-dot.active span {
+    background: #ff4d4d !important;
+  }
+}
+
+#dc-carousel {
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next {
+    background-color: #0d47a1 !important;
+  }
+
+  .owl-nav .owl-prev:hover,
+  .owl-nav .owl-next:hover {
+    background-color: rgba(13, 71, 161, 0.6) !important;
+  }
+
+  .owl-dot.active span {
+    background: #42a5f5 !important;
   }
 }
 
