@@ -358,12 +358,23 @@
               >
                 The Punisher: One Last Kill
               </h1>
-              <p
-                class="fs-3 font-secondary text-white fst-italic"
+             
+               <div
+                class="mb-4 flex flex-col align-items-center w-100"
                 data-animate="animate__fadeInUp animate-delay-1"
               >
-                Premiere Date: 12/05/2026
-              </p>
+                <p
+                  class="mb-0 fs-3 font-secondary text-white fst-italic text-center"
+                >
+                  Streaming Now On
+                </p>
+                <img
+                  src="/assets/img/marvel/disney-logo.png"
+                  alt="disney logo"
+                  width="70"
+                  class="d-block mx-auto"
+                />
+              </div>
 
               <div
                 class="card text-white bg-marvel-color text-center mb-3 mx-4 mx-md-5 border-white border font-secondary fs-5"
@@ -396,6 +407,15 @@
                         <a href="./still1.png" data-fancybox="gallery">
                           <img
                             src="./still1.png"
+                            class="img-fluid rounded gallery-hover"
+                            alt="Gallery Image"
+                          />
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="./still2.png" data-fancybox="gallery">
+                          <img
+                            src="./still2.png"
                             class="img-fluid rounded gallery-hover"
                             alt="Gallery Image"
                           />
@@ -644,16 +664,16 @@
         return new bootstrap.Tooltip(tooltipTriggerEl);
       });
 
-         const modal = document.getElementById("exampleModal");
-         const iframe = modal.querySelector("iframe");
+      const modal = document.getElementById("exampleModal");
+      const iframe = modal.querySelector("iframe");
 
-         modal.addEventListener("show.bs.modal", function () {
-           iframe.src = iframe.dataset.src;
-         });
+      modal.addEventListener("show.bs.modal", function () {
+        iframe.src = iframe.dataset.src;
+      });
 
-         modal.addEventListener("hidden.bs.modal", function () {
-           iframe.src = "";
-         });
+      modal.addEventListener("hidden.bs.modal", function () {
+        iframe.src = "";
+      });
     </script>
   </body>
 </html>
