@@ -941,6 +941,11 @@ div.rounded-5 img {
   transition: color 0.3s ease-in-out;
 }
 
+#movies-tab,
+#tv-tab {
+  color: #fff !important;
+}
+
 /* Hidden rows initially */
 .hidden-rows {
   max-height: 0;
