@@ -76,6 +76,7 @@ npm install sass
 - **Dropdown Navbar** — Multi-level dropdown menus for Universes, Heroes, Teams, and Movies & TV
 - **Legal Pages** — Dedicated Privacy Policy and DMCA pages for professional compliance
 - **Cross-linking Architecture** — Team member icons link directly to individual hero pages; universe logos link to universe hubs
+- **Interactive Content Carousels** — Implemented Owl Carousel sliders for hero cards, team showcases, upcoming releases, and embedded YouTube trailers with responsive touch-enabled navigation.
 
 ---
 
@@ -152,31 +153,6 @@ The Avengers · X-Men · Fantastic Four · Guardians of the Galaxy · Defenders 
 ### DC (9 Teams)
 
 Justice League · Justice League Dark · Teen Titans · The Suicide Squad · Watchmen · Creature Commandos · Shazam Family · The Authority · The Terrifics
-
----
-
-## 🎬 Upcoming Content Covered
-
-### Movies
-
-| Title                               | Universe |
-| ----------------------------------- | -------- |
-| Avengers: Doomsday                  | Marvel   |
-| Avengers: Secret Wars               | Marvel   |
-| Spider-Man: Brand New Day           | Marvel   |
-| Spider-Man: Beyond the Spider-Verse | Marvel   |
-| Supergirl                           | DC       |
-| Clayface                            | DC       |
-
-### TV Series
-
-| Title                 | Universe |
-| --------------------- | -------- |
-| Daredevil: Born Again | Marvel   |
-| Spider-Noir           | Marvel   |
-| The Punisher: One Last Kill    | Marvel   |
-| Vision Quest          | Marvel   |
-| Lanterns              | DC       |
 
 ---
 
@@ -336,6 +312,7 @@ heroverse/
 - **Breadcrumbs** — Every inner page has a breadcrumb trail so users always know their location in the site hierarchy
 - **Pagination** — Detail pages use page-based navigation to browse between heroes/teams/movies without returning to the gallery
 - **Team Member Icon Grid** — Clickable character icons on every team page that deep-link directly to individual hero detail pages
+- **Interactive Content Carousels** — Implemented Owl Carousel sliders for hero cards, team showcases, upcoming releases, and embedded YouTube trailers with responsive touch-enabled navigation.
 
 ---
 
