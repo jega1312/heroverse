@@ -326,7 +326,7 @@
                 </div>
 
                 <!-- Button trigger modal -->
-                <!-- <button
+                <button
                   type="button"
                   class="btn text-white trailer-btn w-50 mt-4 border-2 border-white font-secondary fs-5"
                   data-bs-toggle="modal"
@@ -335,7 +335,7 @@
                 >
                   <i class="fas fa-play-circle me-1"></i>
                   Play Trailer
-                </button> -->
+                </button>
               </div>
             </div>
 
@@ -364,7 +364,7 @@
                 class="fs-3 font-secondary text-white fst-italic"
                 data-animate="animate__fadeInUp animate-delay-1"
               >
-                Release Date: 01/10/2027
+                Release Date: 18/02/2028
               </p>
 
               <div
@@ -520,7 +520,7 @@
       </main>
 
       <!-- Modal -->
-      <!-- <div
+      <div
         class="modal fade"
         id="exampleModal"
         data-bs-backdrop="static"
@@ -542,7 +542,7 @@
             <div class="modal-body p-0">
               <div class="ratio ratio-16x9">
                 <iframe
-                  data-src=""
+                  data-src="https://www.youtube-nocookie.com/embed/aG8U7-XK7PI?si=KzdeXr2kUifDrkaO"
                   src=""
                   title="YouTube video player"
                   frameborder="0"
@@ -562,7 +562,7 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
       <footer>
         <!-- place footer here -->
         <nav
@@ -651,31 +651,31 @@
     <script src="../../../../../assets/js/script.js"></script>
 
     <script>
-      //   Fancybox.bind('[data-fancybox="gallery"]', {
-      //     Thumbs: true,
-      //     Toolbar: true,
-      //     animated: true,
-      //     showClass: "fancybox-fadeIn",
-      //     hideClass: "fancybox-fadeOut",
-      //   });
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        Thumbs: true,
+        Toolbar: true,
+        animated: true,
+        showClass: "fancybox-fadeIn",
+        hideClass: "fancybox-fadeOut",
+      });
 
-      //   var tooltipTriggerList = [].slice.call(
-      //     document.querySelectorAll('[data-bs-toggle="tooltip"]'),
-      //   );
-      //   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      //     return new bootstrap.Tooltip(tooltipTriggerEl);
-      //   });
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]'),
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
 
-      //   const modal = document.getElementById("exampleModal");
-      //   const iframe = modal.querySelector("iframe");
+      const modal = document.getElementById("exampleModal");
+      const iframe = modal.querySelector("iframe");
 
-      //   modal.addEventListener("show.bs.modal", function () {
-      //     iframe.src = iframe.dataset.src;
-      //   });
+      modal.addEventListener("show.bs.modal", function () {
+        iframe.src = iframe.dataset.src;
+      });
 
-      //   modal.addEventListener("hidden.bs.modal", function () {
-      //     iframe.src = "";
-      //   });
+      modal.addEventListener("hidden.bs.modal", function () {
+        iframe.src = "";
+      });
     </script>
   </body>
 </html>
